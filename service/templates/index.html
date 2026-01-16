@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EEG Eye State</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">EEG Eye State</p>
+        <h1>Predict eye state from EEG signals</h1>
+        <p class="lead">
+          Enter 14 EEG channel values and get a probability that the eyes are closed.
+        </p>
+        <div class="meta">
+          <span>Model: Random Forest</span>
+          <span>Target: eyeDetection</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-title">Live Prediction</div>
+        <form id="predict-form" class="grid"></form>
+        <div class="actions">
+          <button id="fill-sample" type="button">Fill sample</button>
+          <button id="submit-btn" type="submit" form="predict-form">Predict</button>
+        </div>
+        <div id="result" class="result"></div>
+      </div>
+    </section>
+    <section class="info">
+      <div>
+        <h2>How it works</h2>
+        <p>
+          The model learns patterns across EEG channels to classify eye state.
+          It returns a probability and a binary prediction.
+        </p>
+      </div>
+      <div>
+        <h2>API</h2>
+        <p>
+          POST <code>/predict</code> with a JSON body containing the 14 features.
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
