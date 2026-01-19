@@ -7,6 +7,11 @@ Predict whether a subject's eyes are open or closed from EEG signals. This is a 
 - **Value**: A lightweight model can infer eye state quickly from sensor readings.
 - **Stack**: scikit-learn + Flask + Docker.
 
+## Web Interface
+Screenshot of the proposed web UI:
+
+![Web interface screenshot](assets/web-interface.png)
+
 ## Dataset
 - File: `EEG-Eye-State.csv`
 - Target: `eyeDetection` (0 = open, 1 = closed)
