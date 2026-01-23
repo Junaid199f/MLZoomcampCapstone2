@@ -39,6 +39,7 @@ Screenshot of the proposed web UI:
 ### 1) Train the model
 ```bash
 python3 train.py
+python3 train_nn.py for deep learning
 ```
 Artifacts are saved to `models/`.
 
