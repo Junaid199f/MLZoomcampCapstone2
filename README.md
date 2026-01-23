@@ -101,7 +101,7 @@ Response:
 Returns service status.
 
 ## Modeling notes
-- Baselines: Logistic Regression, Random Forest, Gradient Boosting.
+- Baselines: Logistic Regression, Random Forest, Gradient Boosting and Neural Network.
 - Model selection: ROC AUC + accuracy.
 - Tuned model: Random Forest with a small grid search.
 
